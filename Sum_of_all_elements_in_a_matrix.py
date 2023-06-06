@@ -1,7 +1,10 @@
 r,c=map(int,input().split())
-mat=[list(map(int,input().split()))for i in range(r)]
+mat=[]
 s=0
 for i in range(r):
-    for j in range(c):
-        s+=mat[i][j]
+    n=list(map(int,input().split()))
+    mat.append(n)
+for i in mat:
+    for j in i:
+        s=s+j
 print(s)
